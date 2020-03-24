@@ -1,18 +1,4 @@
-%link {
-    font-size: 12px;
-    line-height: 16px;
-    color: #0F1E36;
-    mix-blend-mode: normal;
-    opacity: 0.5;
-  
-    &:hover{
-        color: #3E2AD1;
-        opacity: 1;
-    }
-
-}
-
-%icon {
+@mixin back_img($position: center) {
     background-repeat: no-repeat;
-    background-position: 0;
+    background-position: $position;
 }

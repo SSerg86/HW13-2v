@@ -1,18 +1,12 @@
-@import 'variables';
-
-
 body {
-    background-color: $primary-color;
-    font-family: $primary-font;
-}
-
-.wrapper {
-    background-color: #ffffff;
+    font-family: Source Sans Pro, sans-serif;
+    background-color: #F2F2F2;
+    padding-top: 20px;
+  }
+  
+  .wrapper {
+    background-color: #FFFFFF;
     max-width: 1024px;
     margin: auto;
     display: flex;
-}
-    
-.main {
-    width: 856px;
   }

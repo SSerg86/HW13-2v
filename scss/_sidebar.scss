@@ -1,70 +1,97 @@
 @import 'config';
 
-
 .sidebar {
-    position: relative;
-    width: 169px;
-    padding-top: 23px;
-    padding-left: 25px;
-    padding-bottom: 156px;
-    border-right: 1px solid #EEEEEE;
-    box-sizing: border-box;
+  position: relative;
+  width: 169px;
+  padding-top: 23px;
+  padding-left: 25px;
+  padding-bottom: 156px;
+  border-right: 1px solid #EEEEEE;
+  box-sizing: border-box;
 
     &__list {
-        margin-top: 43px;
-    }  
+      margin-top: 43px;
 
-    &__list-item {
-        @extend %icon;
-        padding-left: 25px;
-        margin: 24px 0;
+    &-item > &-item_active{
+      color: #0F1E36;
+      opacity: 1;
     }
-      .discover {
-        background-image: url('../picture/bullets_icon/Discover.png');
-      }
-      
-      .songs {
-        background-image: url('picture/bullets_icon/Songs.png');
-      }
-      
-      .albums {
-        background-image: url('picture/bullets_icon/Albums.png');
-      }
-      
-      .artists {
-        background-image: url('picture/bullets_icon/Artists.png');
-      }
-      
-      .youtube {
-        background-image: url('picture/bullets_icon/YouTube.png');
-      }
-      
-      .playlist {
-        padding-left: 0;
-      }
-      
-      .favourite {
-        background-image: url('picture/bullets_icon/Favourite.png');
-      }
-      
-      .history {
-        background-image: url('picture/bullets_icon/Recent History.png');
-      }
-      
-      .download {
-        background-image: url('picture/bullets_icon/Download Items.png');
-      }
-      .folder {
-        background-image: url('picture/bullets_icon/Local Files.png');
-      }
+  }
+}
 
-      &__list-item a {
-          @extend %link;
-      }
+ .sidebar__list-item {
+   padding-left: 25px;
+   margin: 24px 0;
+   @include back_img (0);
 
-      &__list-item > &__list-item_active {
-        color: #0F1E36;
-        opacity: 1;
+    a {
+      font-size: 12px;
+      line-height: 16px;
+      color: #0F1E36;
+      mix-blend-mode: normal;
+      opacity: 0.5;
+      
+      &:hover{
+          color: #3E2AD1;
+          opacity: 1;
       }
-    
+    }
+  }
+ 
+.discover {
+  background-image: url('../picture/bullets_icon/Discover.png');
+}
+
+.songs {
+  background-image: url('../picture/bullets_icon/Songs.png');
+}
+
+.albums {
+  background-image: url('../picture/bullets_icon/Albums.png');
+}
+
+.artists {
+  background-image: url('../picture/bullets_icon/Artists.png');
+}
+
+.youtube {
+  background-image: url('../picture/bullets_icon/YouTube.png');
+}
+
+.playlist {
+  padding-left: 0;
+}
+
+.favourite {
+  background-image: url('../picture/bullets_icon/Favourite.png');
+}
+
+.history {
+  background-image: url('../picture/bullets_icon/Recent History.png');
+}
+
+.download {
+  background-image: url('../picture/bullets_icon/Download Items.png');
+}
+
+.folder {
+  background-image: url('../picture/bullets_icon/Local Files.png');
+}
+
+.sidebar__logo {
+    display: inline-block;
+    width: 89px;
+    height: 34px;
+    background-image: url(../picture/Mask_Group.png);
+    @include back_img;
+}
+
+.sidebar_add {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 19px;
+    top: 486px;
+    background-image: url('../picture/bullets_icon/Plus.png');
+    @include back_img;
 }

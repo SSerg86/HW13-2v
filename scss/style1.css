@@ -34,10 +34,10 @@ body {
 }
 
 .sidebar__list-item {
-  background-repeat: no-repeat;
-  background-position: 0;
   padding-left: 25px;
   margin: 24px 0;
+  background-repeat: no-repeat;
+  background-position: 0;
 }
 
 .sidebar__list-item a {
@@ -50,7 +50,6 @@ body {
 
 .sidebar__list-item a:hover {
   color: #3E2AD1;
-  mix-blend-mode: normal;
   opacity: 1;
 }
 
@@ -99,8 +98,8 @@ body {
   width: 89px;
   height: 34px;
   background-image: url(../picture/Mask_Group.png);
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .sidebar_add {
@@ -111,6 +110,7 @@ body {
   top: 486px;
   background-image: url("../picture/bullets_icon/Plus.png");
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .main {
@@ -126,11 +126,11 @@ body {
   padding-left: 22px;
 }
 
-.topbar .search_bar {
+.search_bar {
   width: 349px;
 }
 
-.topbar .search_bar .input_place {
+.search_bar .input_place {
   width: 164px;
   height: 27px;
   margin-top: 22px;
@@ -145,35 +145,35 @@ body {
   background-position: 0;
 }
 
-.topbar .tv {
+.tv {
   background: url("../picture/TV.png");
 }
 
-.topbar .radio {
+.radio {
   background: url("../picture/Radio.png");
 }
 
-.topbar .bell {
+.bell {
   background: url("../picture/Bell.png");
 }
 
-.topbar .user {
+.user {
   display: block;
   width: 246px;
   background: url("../picture/Profile Picture.png");
-  background-repeat: no-repeat;
-  background-position: 23px;
   background-size: 45%;
   border-left: 1px solid rgba(15, 30, 54, 0.05);
+  background-repeat: no-repeat;
+  background-position: 23px;
 }
 
-.topbar .block {
+.block {
   display: block;
   width: 87px;
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 25%;
   border-left: 1px solid rgba(15, 30, 54, 0.05);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .slider {
@@ -198,25 +198,17 @@ body {
   line-height: 14px;
 }
 
-.tracks {
-  width: auto;
-  height: 472px;
-  background: url("../picture/Rectangle.png");
-  padding-left: 23px;
-  padding-top: 24px;
+.info .trending {
+  font-size: 10px;
+  text-transform: uppercase;
 }
 
-.artist_name {
+.artist {
   font-weight: bold;
   font-size: 28px;
   line-height: 30px;
   text-transform: capitalize;
   margin: 7px auto;
-}
-
-.info .trending {
-  font-size: 10px;
-  text-transform: uppercase;
 }
 
 .slider_button {
@@ -230,7 +222,7 @@ body {
   margin-top: 43px;
 }
 
-.play {
+.slider_button .play {
   width: 62px;
   height: 22px;
   background-color: #FFFFFF;
@@ -247,14 +239,14 @@ body {
   background-size: 12%;
 }
 
-.share {
+.slider_button .share {
   width: 24px;
   height: 22px;
   background-color: #FFFFFF;
   background-image: url("../picture/Share.png");
+  border-radius: 3px;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 3px;
 }
 
 .slider_rect {
@@ -263,15 +255,22 @@ body {
   left: 389px;
 }
 
-.rect {
+.slider_rect .rect {
   display: inline-block;
   width: 16px;
   height: 5px;
   background-color: #FFFFFF;
 }
 
-.rect:hover {
+.slider_rect .rect:hover {
   background: #3E2AD1;
+}
+
+.tracks {
+  width: auto;
+  background: url("../picture/Rectangle.png");
+  padding-left: 23px;
+  padding-top: 24px;
 }
 
 .tracks_header {
@@ -295,6 +294,7 @@ body {
 .albom_block {
   display: inline-block;
   text-align: left;
+  margin-right: 20px;
 }
 
 .cover {
@@ -302,7 +302,6 @@ body {
   height: 112px;
   margin-bottom: 8px;
   border-radius: 3px;
-  margin-right: 20px;
 }
 
 .cover_name {
@@ -358,6 +357,10 @@ body {
   background-image: url("../picture/cover/Seventh.png");
   background-repeat: no-repeat;
   background-position: left;
+}
+
+.top_tracks {
+  padding-top: 23px;
 }
 
 .top_tracks_list {
