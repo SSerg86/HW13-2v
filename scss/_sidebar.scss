@@ -1,0 +1,70 @@
+@import 'config';
+
+
+.sidebar {
+    position: relative;
+    width: 169px;
+    padding-top: 23px;
+    padding-left: 25px;
+    padding-bottom: 156px;
+    border-right: 1px solid #EEEEEE;
+    box-sizing: border-box;
+
+    &__list {
+        margin-top: 43px;
+    }  
+
+    &__list-item {
+        @extend %icon;
+        padding-left: 25px;
+        margin: 24px 0;
+    }
+      .discover {
+        background-image: url('../picture/bullets_icon/Discover.png');
+      }
+      
+      .songs {
+        background-image: url('picture/bullets_icon/Songs.png');
+      }
+      
+      .albums {
+        background-image: url('picture/bullets_icon/Albums.png');
+      }
+      
+      .artists {
+        background-image: url('picture/bullets_icon/Artists.png');
+      }
+      
+      .youtube {
+        background-image: url('picture/bullets_icon/YouTube.png');
+      }
+      
+      .playlist {
+        padding-left: 0;
+      }
+      
+      .favourite {
+        background-image: url('picture/bullets_icon/Favourite.png');
+      }
+      
+      .history {
+        background-image: url('picture/bullets_icon/Recent History.png');
+      }
+      
+      .download {
+        background-image: url('picture/bullets_icon/Download Items.png');
+      }
+      .folder {
+        background-image: url('picture/bullets_icon/Local Files.png');
+      }
+
+      &__list-item a {
+          @extend %link;
+      }
+
+      &__list-item > &__list-item_active {
+        color: #0F1E36;
+        opacity: 1;
+      }
+    
+}
