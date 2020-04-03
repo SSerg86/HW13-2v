@@ -224,12 +224,12 @@
   }
   
   .top_tracks_list {
-    display: flex;
-    width: auto;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: 39px; 
   }
   
-  .top_tracks_list_number, .top_tracks_list_song, .top_tracks_list_artist,
-  .top_tracks_list_score, .top_tracks_list_time {
+  .top_tracks_list > li {
     font-size: 12px;
     line-height: 16px;
     color: #0F1E36;
@@ -237,24 +237,53 @@
     opacity: 0.5;
   }
   
-  .top_tracks_list_number,.top_tracks_list_time, .top_tracks_list_option, 
-  .top_tracks_list_share,.top_tracks_list_like {
-    flex: 1;
+  .top_tracks_list_number {
     text-align: center;
-  }
-  
-  .top_tracks_list_song, .top_tracks_list_artist,
-  .top_tracks_list_score, .top_tracks_list_etc{
-    flex: 2;
-    text-align: center;
-  }
-  
+  }  
+
   .top_tracks_list_like {
     background-image: url('../picture/bullets_icon/Favourite.png');
-    @include back_img(left);
+    @include back_img(right);
   }
   
   .top_tracks_list_option {
     background-image: url('../picture/bullets_icon/Download Items.png');
     @include back_img(left);
+    grid-column: 17 / span 1;
+    grid-row: 1;
+  }
+
+  .top_tracks_list_share {
+    background-image: url('../picture/bullets_icon/share.png');
+    @include back_img(left);
+    grid-column: 18 / span 1;
+    grid-row: 1;
+    
+  }
+
+  .top_tracks_list_etc {
+    background-image: url('../picture/bullets_icon/dotes.png');
+    @include back_img(center);
+    grid-column: 19 / span 1;
+    grid-row: 1;
+  }
+
+  .top_tracks_list_song {
+    grid-column: 5 / span2;
+    grid-row: 1;
+  }
+
+  .top_tracks_list_artist {
+    grid-column: 8 / span2;
+    grid-row: 1;
+  }
+
+  .top_tracks_list_score {
+    grid-column: 12 / span 1;
+    grid-row: 1;
+  }
+
+  .top_tracks_list_time {
+    grid-column: 15 / span 1;
+    grid-row: 1;
   }

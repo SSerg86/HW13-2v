@@ -26,6 +26,7 @@ body {
 
 .sidebar__list {
   margin-top: 43px;
+  width: 125px;
 }
 
 .sidebar__list-item > .sidebar__list-item_active {
@@ -103,11 +104,11 @@ body {
 }
 
 .sidebar_add {
-  width: 12px;
-  height: 12px;
   position: absolute;
   right: 19px;
-  top: 486px;
+  top: 525px;
+  width: 12px;
+  height: 12px;
   background-image: url("../picture/bullets_icon/Plus.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -364,14 +365,15 @@ body {
 }
 
 .top_tracks_list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[20];
+      grid-template-columns: repeat(20, 1fr);
+  -ms-grid-rows: 39px;
+      grid-template-rows: 39px;
 }
 
-.top_tracks_list_number, .top_tracks_list_song, .top_tracks_list_artist,
-.top_tracks_list_score, .top_tracks_list_time {
+.top_tracks_list > li {
   font-size: 12px;
   line-height: 16px;
   color: #0F1E36;
@@ -379,31 +381,74 @@ body {
   opacity: 0.5;
 }
 
-.top_tracks_list_number, .top_tracks_list_time, .top_tracks_list_option,
-.top_tracks_list_share, .top_tracks_list_like {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  text-align: center;
-}
-
-.top_tracks_list_song, .top_tracks_list_artist,
-.top_tracks_list_score, .top_tracks_list_etc {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+.top_tracks_list_number {
   text-align: center;
 }
 
 .top_tracks_list_like {
   background-image: url("../picture/bullets_icon/Favourite.png");
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: right;
 }
 
 .top_tracks_list_option {
   background-image: url("../picture/bullets_icon/Download Items.png");
   background-repeat: no-repeat;
   background-position: left;
+  -ms-grid-column: 17;
+  -ms-grid-column-span: 1;
+  grid-column: 17 / span 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.top_tracks_list_share {
+  background-image: url("../picture/bullets_icon/share.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  -ms-grid-column: 18;
+  -ms-grid-column-span: 1;
+  grid-column: 18 / span 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.top_tracks_list_etc {
+  background-image: url("../picture/bullets_icon/dotes.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  -ms-grid-column: 19;
+  -ms-grid-column-span: 1;
+  grid-column: 19 / span 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.top_tracks_list_song {
+  grid-column: 5 / span2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.top_tracks_list_artist {
+  grid-column: 8 / span2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.top_tracks_list_score {
+  -ms-grid-column: 12;
+  -ms-grid-column-span: 1;
+  grid-column: 12 / span 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.top_tracks_list_time {
+  -ms-grid-column: 15;
+  -ms-grid-column-span: 1;
+  grid-column: 15 / span 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
 }
 /*# sourceMappingURL=style1.css.map */

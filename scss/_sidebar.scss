@@ -11,6 +11,7 @@
 
     &__list {
       margin-top: 43px;
+      width: 125px;
 
     &-item > &-item_active{
       color: #0F1E36;
@@ -86,12 +87,12 @@
     @include back_img;
 }
 
-.sidebar_add {
-    width: 12px;
-    height: 12px;
-    position: absolute;
-    right: 19px;
-    top: 486px;
-    background-image: url('../picture/bullets_icon/Plus.png');
-    @include back_img;
+ .sidebar_add{
+  position: absolute;
+  right:19px;
+  top: 525px;
+  width: 12px;
+  height: 12px;
+  background-image: url('../picture/bullets_icon/Plus.png');
+  @include back_img;
 }
