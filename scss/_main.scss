@@ -221,6 +221,10 @@
   
   .top_tracks {
     padding-top: 23px;
+
+    &_list head {
+      opacity: 1;
+    }
   }
   
   .top_tracks_list {
@@ -236,9 +240,17 @@
     mix-blend-mode: normal;
     opacity: 0.5;
   }
+
+ 
+
+  .top_tracks_list_dash {
+    background-image: url('../picture/bullets_icon/dash.png');
+    @include back_img(center);
+  }
   
   .top_tracks_list_number {
     text-align: center;
+    padding-top: 12px;
   }  
 
   .top_tracks_list_like {
@@ -271,19 +283,44 @@
   .top_tracks_list_song {
     grid-column: 5 / span2;
     grid-row: 1;
+    padding-top: 12px;
   }
 
   .top_tracks_list_artist {
     grid-column: 8 / span2;
     grid-row: 1;
+    padding-top: 12px;
   }
 
   .top_tracks_list_score {
     grid-column: 12 / span 1;
     grid-row: 1;
+    padding-top: 12px;
   }
 
   .top_tracks_list_time {
     grid-column: 15 / span 1;
     grid-row: 1;
+    padding-top: 12px;
   }
+
+  .top_tracks_list_rate {
+    grid-column: 12 / span 2;
+    grid-row: 1;
+    padding-top: 12px;
+  }
+
+  .top_tracks_list_optn {
+    background: none;
+    grid-column: 17 / span 1;
+    grid-row: 1;
+    padding-top: 12px;
+   
+  }
+
+  .top_tracks_list_active {
+    background-image: url('../picture/bullets_icon/Voice_recorder.png');
+    @include back_img(center);
+  }
+
+ 
