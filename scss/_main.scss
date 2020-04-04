@@ -229,6 +229,12 @@
     display: grid;
     grid-template-columns: repeat(20, 1fr);
     grid-template-rows: 39px; 
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.01);
+      background-color: none;
+    }
   }
   
   .top_tracks_list > li {

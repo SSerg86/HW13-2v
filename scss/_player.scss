@@ -51,6 +51,7 @@
     max-height: 62px;
     display: flex;
     padding-left: 24px;
+    padding-right: 29px;
     align-items: center;
 
     .loading {
@@ -58,6 +59,11 @@
         height: 13px;
         background-image: url(../picture/player/Loading.png);
         @include back_img;
+
+        &:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
 
     }
 
@@ -67,13 +73,31 @@
         margin-left: 31px;
         background-image: url(../picture/player/Options.png);
         @include back_img;
+
+        &:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
     }
 
+    .previous {
+        width: 16px;
+        height: 10px;
+        margin-left: 56px;
+        background-image: url(../picture/player/Backward.png);
+        @include back_img;
+
+        &:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
+    
     .pause {
         position: relative;
             width: 36px;
             height: 36px;
-            margin-left: 95px;
+            margin-left: 28px;
             background-image: url(../picture/player/Ellipse_after.png);
             @include back_img;
             z-index: 0;
@@ -103,6 +127,77 @@
             z-index: 1;
 
         }
+
+        &:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
+
+    .backward {
+        width: 16px;
+        height: 10px;
+        margin-left: 28px;
+        background-image: url(../picture/player/Backward_right.png);
+        @include back_img;
+
+        &:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
+
+    .progress {
+        position: relative;
+        width: 326px;
+        height: 4px;
+        margin-left: 77px;
+        background-color: #ffffff;
+        background-image: url(../picture/player/progress.png);
+        @include back_img(left);
+
+        &::before {
+            content: "2:54";
+            position: absolute;
+            left: -28px;
+            top: -5px;
+            font-size: 10px;
+            line-height: 13px;
+            color: #FFFFFF;
+            opacity: 0.5;
+        }
+
+        &::after {
+            content: "3:29";
+            position: absolute;
+            right: -28px;
+            top: -5px;
+            font-size: 10px;
+            line-height: 13px;
+            color: #FFFFFF;
+            opacity: 0.5;
+        }
+    }
+
+    .loud {
+        width: 17px;
+        height: 14px;
+        margin-left: 95.7px;
+        background-image: url(../picture/player/Louder.png);
+        @include back_img;
+
+        &:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
+
+    .window {
+        width: 16px;
+        height: 12px;
+        margin-left: 34.6px;
+        background-image: url(../picture/player/Window.png);
+        @include back_img;
 
         &:hover{
             transform: scale(1.1);

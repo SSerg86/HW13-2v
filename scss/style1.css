@@ -377,6 +377,13 @@ body {
       grid-template-rows: 39px;
 }
 
+.top_tracks_list:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  background-color: none;
+}
+
 .top_tracks_list > li {
   font-size: 12px;
   line-height: 16px;
@@ -552,6 +559,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding-left: 24px;
+  padding-right: 29px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -565,6 +573,12 @@ body {
   background-position: center;
 }
 
+.player_nav .loading:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
 .player_nav .options {
   width: 16px;
   height: 9px;
@@ -574,11 +588,32 @@ body {
   background-position: center;
 }
 
+.player_nav .options:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+.player_nav .previous {
+  width: 16px;
+  height: 10px;
+  margin-left: 56px;
+  background-image: url(../picture/player/Backward.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.player_nav .previous:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
 .player_nav .pause {
   position: relative;
   width: 36px;
   height: 36px;
-  margin-left: 95px;
+  margin-left: 28px;
   background-image: url(../picture/player/Ellipse_after.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -612,6 +647,84 @@ body {
 }
 
 .player_nav .pause:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+.player_nav .backward {
+  width: 16px;
+  height: 10px;
+  margin-left: 28px;
+  background-image: url(../picture/player/Backward_right.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.player_nav .backward:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+.player_nav .progress {
+  position: relative;
+  width: 326px;
+  height: 4px;
+  margin-left: 77px;
+  background-color: #ffffff;
+  background-image: url(../picture/player/progress.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.player_nav .progress::before {
+  content: "2:54";
+  position: absolute;
+  left: -28px;
+  top: -5px;
+  font-size: 10px;
+  line-height: 13px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.player_nav .progress::after {
+  content: "3:29";
+  position: absolute;
+  right: -28px;
+  top: -5px;
+  font-size: 10px;
+  line-height: 13px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.player_nav .loud {
+  width: 17px;
+  height: 14px;
+  margin-left: 95.7px;
+  background-image: url(../picture/player/Louder.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.player_nav .loud:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+.player_nav .window {
+  width: 16px;
+  height: 12px;
+  margin-left: 34.6px;
+  background-image: url(../picture/player/Window.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.player_nav .window:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   cursor: pointer;
