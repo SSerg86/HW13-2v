@@ -1,0 +1,113 @@
+.player_main {
+    display: flex;
+    position: absolute;
+    bottom: -110px;
+}
+
+.song_info {
+    background-color: #F51E38;
+    padding: 12px 20px 10px 24px ;
+    display: flex;
+}
+    
+.song_info_cover {
+    width: 40px;
+    height: 40px;
+    background-image: url(../picture/player/albom_cover.png);
+    @include back_img(center);
+    
+}
+
+.song_info_track {
+    margin-left: 8px;
+    position: relative;
+
+    h3 {
+        font-size: 12px;
+        line-height: 16px;
+        color: #FFFFFF;
+    }
+
+    p {
+        font-size: 10px;
+        line-height: 12px;
+        color: #F79DA8;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: -12px;
+        top: -2px;
+        width: 13px;
+        height: 9.9px;
+        background-image: url(../picture/player/Play_List.png);
+        @include back_img;
+    }
+}
+
+.player_nav {
+    background-color: #0F1E36;
+    max-height: 62px;
+    display: flex;
+    padding-left: 24px;
+    align-items: center;
+
+    .loading {
+        width: 12px;
+        height: 13px;
+        background-image: url(../picture/player/Loading.png);
+        @include back_img;
+
+    }
+
+    .options {
+        width: 16px;
+        height: 9px;
+        margin-left: 31px;
+        background-image: url(../picture/player/Options.png);
+        @include back_img;
+    }
+
+    .pause {
+        position: relative;
+            width: 36px;
+            height: 36px;
+            margin-left: 95px;
+            background-image: url(../picture/player/Ellipse_after.png);
+            @include back_img;
+            z-index: 0;
+       
+
+        &::before{
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            width: 45px;
+            height: 45px;
+            background-image: url(../picture/player/Ellipse_main.png);
+            @include back_img;
+            z-index: -1;
+        }
+
+        &::after{
+            content: "";
+            position: absolute;
+            top: 11px;
+            left: 13px;
+            width: 10px;
+            height: 13.5px;
+            background-image: url(../picture/player/Pause.png);
+            @include back_img;
+            z-index: 1;
+
+        }
+
+        &:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
+}
+
